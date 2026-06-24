@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- HOME -->
+    <div id="homeScreen" class="screen active">
+      <h1>Fitness App</h1>
+      <button onclick="startWorkout()" class="primary-btn">
+        Start Workout
+      </button>
+      <button onclick="showProgress()" class="secondary-btn">
+        View Progress
+      </button>
+    </div>
+
+    <!-- WORKOUT -->
+    <div id="workoutScreen" class="screen">
+      <h2 id="exerciseName"></h2>
+      <p id="exerciseDetails"></p>
+
+      <button onclick="completeSet()" class="primary-btn">
+        Complete Set
+      </button>
+
+      <button onclick="nextExercise()" class="secondary-btn">
+        Next Exercise
+      </button>
+    </div>
+
+    <!-- PROGRESS -->
+    <div id="progressScreen" class="screen">
+      <h2>Progress</h2>
+      <p id="progressText"></p>
+
+      <button onclick="goHome()" class="primary-btn">
+        Back
+      </button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
